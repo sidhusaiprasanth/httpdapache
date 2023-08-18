@@ -13,3 +13,5 @@ umount folder
 use blkid command to get UUID and use UUID instead of /dev/.. in fstab
 vim /etc/fstab add entry to make it permanent
 
+
+ggdsd
