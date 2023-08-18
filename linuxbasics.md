@@ -130,6 +130,15 @@ cat /etc/shadow   # Shows all Passwords related details for all users in encrypt
 
 cat /etc/ssh/sshd_config  # Shows all SSH service related configurations
 
+cat /etc/login.defs    # Password aging configuration
+
+
+cat /etc/security/pwquality.conf  
+
+cat /etc/pam.d/common-password   #(ubuntu-based)
+
+cat /etc/pam.d/system-auth    # Used to set password related configuration and restrictions
+
 ```
 ## **/etc/passwd**
 ![/etc/passwd](https://static1.squarespace.com/static/5a01100f692ebe0459a1859f/t/5f9123d2b807353e905b4fe6/1603347440376/BSY+Security+Class+Diagrams+-+_etc_passwd+%28L%29.jpg?format=1500w)
