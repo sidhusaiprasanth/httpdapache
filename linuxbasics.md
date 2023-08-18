@@ -181,7 +181,7 @@ ps -ef     # List all processes
 
 
 ```bash
-netstat -tulpn 
+netstat -tulpn   # List all ports listening on server
 ```
 
 
