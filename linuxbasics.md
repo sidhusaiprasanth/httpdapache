@@ -132,7 +132,7 @@ cat /etc/ssh/sshd_config  # Shows all SSH service related configurations
 
 ```
 ## **/etc/passwd**
-![/etc/passwd](https://images.squarespace-cdn.com/content/v1/5a01100f692ebe0459a1859f/1603347459833-GSR76P31T020NK97YV4B/BSY+Security+Class+Diagrams+-+_etc_shadow+%28L%29.jpg)
+![/etc/passwd](https://static1.squarespace.com/static/5a01100f692ebe0459a1859f/t/5f9123d2b807353e905b4fe6/1603347440376/BSY+Security+Class+Diagrams+-+_etc_passwd+%28L%29.jpg?format=1500w)
 
 ## **/etc/shadow/**
 
@@ -175,9 +175,16 @@ chgrp $GROUPNAME $FILENAME    # To change $GROUPNAME of a existing file
 ps -ef     # List all processes
 ```
 
-![ps-ef](https://s0.cyberciti.org/images/faq/2013/05/ps-aux-pidof-demo.png)
+![ps-ef](https://itslinuxfoss.com/wp-content/uploads/2023/01/ps-ef-Command-in-Linux-1.png)
 
-
+> * UID: the user ID of the user who owns the process
+> * PID: the process ID of the process
+> * PPID: the process ID of the parent process
+> * C: the CPU utilization of the process, as a percentage
+> * STIME: the time at which the process was started
+> * TTY: the terminal associated with the process
+> * TIME: the CPU time used by the process
+> * CMD: the command that was used to start the process, including any command-line arguments passed to the process
 
 
 ```bash
@@ -186,3 +193,13 @@ netstat -tulpn   # List all ports listening on server
 
 
 ![netstat -tulpn](https://www.net7.be/assets/images/news/netstat_output.png)
+
+
+```bash
+nslookup $DOMAIN_NAME 
+dig $DOMAIN_NAME  # Shows the IP of the $DOMAIN_NAME from the LOCAL DNS / NON-AUTHORITATIVE server  
+```
+
+![nslookup](https://media.geeksforgeeks.org/wp-content/uploads/1final-1.png)
+
+
