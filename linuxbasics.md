@@ -31,7 +31,7 @@ cal      # Shows the calender
 
 time     # time
 
-datetime  # shows time and timezone
+timedatectl  # shows time and timezone
 
 date       # Shows date
 
