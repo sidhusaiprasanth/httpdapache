@@ -235,3 +235,22 @@ dig $DOMAIN_NAME  # Shows the IP of the $DOMAIN_NAME from the LOCAL DNS / NON-AU
 ![nslookup](https://media.geeksforgeeks.org/wp-content/uploads/1final-1.png)
 
 
+# **SUDOERS FILE**
+
+> **Run visudo command**
+
+```bash
+visudo
+
+
+# Add these lines in the sudoers file
+  achu         ALL=(ALL:ALL)       NOPASSWD:ALL
+# WHICH_USER   ON_WHICH_HOSTS=(AS_WHICH_USER:AS_WHICH_GROUP)    DONT_ASK_PASSWORD:ALL_COMMANDS
+
+%wheel        ALL=(ALL)       NOPASSWD: ALL
+
+# Similarly like above this is for Entire wheel group
+
+ammu    ALL=(ALL:ALL)       NOPASSWD: /usr/bin/cat /etc/shadow
+# If particuar user needs to have access to only one command cat /etc/shadow without password
+```
