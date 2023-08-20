@@ -63,8 +63,31 @@ tail -n $FILENAME   # View last n lines
 
 tail -f $FILENAME   # To view live logs/data entering into this file
 
+vim /etc/issue.net   # Used to create banner before logging into a server
 
+
+vim /etc/profile.d/motd.sh
+
+# Some Ascii art generators online are attached below
+   ___   _________________    
+  / _ | / __/ ___/  _/  _/    
+ / __ |_\ \/ /___/ /_/ /      
+/_/_|_/___/\___/___/___/      
+  / _ )___ ____  ___  ___ ____
+ / _  / _ `/ _ \/ _ \/ -_) __/
+/____/\_,_/_//_/_//_/\__/_/   
+
+# Add colors to text in bash shell
+
+#!/bin/bash  
+BLUE='\033[0;34m'
+WHITE= '\033[0;37m' 
+RED= '\033[0;31m'   
+echo -e "${Blue}Welcome ${WHITE}to ${RED}France"
+                              
 ```
+
+[asciiartgenerator](https://manytools.org/hacker-tools/ascii-banner/)
 ---
 
 
