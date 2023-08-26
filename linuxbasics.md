@@ -254,3 +254,53 @@ visudo
 ammu    ALL=(ALL:ALL)       NOPASSWD: /usr/bin/cat /etc/shadow
 # If particuar user needs to have access to only one command cat /etc/shadow without password
 ```
+
+
+
+#  **Password age**
+
+```bash
+┌──(sidhu㉿sidhumachine)-[~/Downloads/experiment]
+└─$     chage
+Usage: chage [options] LOGIN
+
+Options:
+  -d, --lastday LAST_DAY        set date of last password change to LAST_DAY
+  -E, --expiredate EXPIRE_DATE  set account expiration date to EXPIRE_DATE
+  -h, --help                    display this help message and exit
+  -i, --iso8601                 use YYYY-MM-DD when printing dates
+  -I, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --list                    show account aging information
+  -m, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -M, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS
+  -R, --root CHROOT_DIR         directory to chroot into
+  -W, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+
+
+
+
+
+  ┌──(sidhu㉿sidhumachine)-[~/Downloads/experiment]
+└─$ chage -l sidhu                 # to check aging details of particular user
+Last password change                                    : Aug 23, 2023
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+
+
+
+
+
+
+```
+
+> **To change default aging properties we need to do it in /etc/login.defs**
+
+
+
