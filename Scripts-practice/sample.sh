@@ -10,8 +10,3 @@
 
 # HOSTNAME=$(hostname)
 
-
-my_array=( 1 3 56.5 "hello" "hi" "hey")
-
-
-echo "Selected word is : ${my_array[3]}"
